@@ -23,6 +23,7 @@
   "include": ["vite.config.ts", ".eslintrc.cjs","src"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "exclude": [
+    "dis",
     "coverage",
     "node_modules/**",
     "*.test.{js+(|x), ts+(|x)}",
