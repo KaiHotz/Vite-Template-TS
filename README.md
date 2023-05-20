@@ -1,2 +1,2 @@
 # Vite-Template-TS
-Vite template Typescript with ESLint, Perttier and Vitest
+Vite template Typescript with ESLint, Stylelint, Prettier and Vitest
