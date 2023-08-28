@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "baseUrl": "./src",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -20,14 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["vite.config.ts", ".eslintrc.cjs", "src"],
-  "references": [{ "path": "./tsconfig.node.json" }],
-  "exclude": [
-    "dis",
-    "coverage",
-    "node_modules/**",
-    "*.test.{js+(|x), ts+(|x)}",
-    "**/*.test.{js+(|x), ts+(|x)}",
-    "*config*"
-  ]
+  "include": ["src", "vite.config.ts", ".eslintrc.cjs"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
