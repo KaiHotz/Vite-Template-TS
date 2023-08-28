@@ -1,4 +1,4 @@
-name: react-rollup-boilerplate
+name: vite-template-ts
 
 on:
   pull_request:
