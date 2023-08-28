@@ -8,7 +8,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
   ],
-  plugins: ['react', 'react-hooks', 'react-refresh', 'jsx-a11y', 'prettier'],
+  plugins: ['react', 'react-hooks', 'react-refresh', 'import', 'jsx-a11y', 'prettier'],
   env: {
     node: true,
     browser: true,
@@ -52,6 +52,20 @@ module.exports = {
       {
         components: ['Link', 'RouterLink'],
         aspects: ['invalidHref'],
+      },
+    ],
+    'import/order': [
+      'error',
+      {
+        'newlines-between': 'always',
+        pathGroups: [
+          {
+            pattern: '$/**',
+            group: 'internal',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['builtin'],
+        groups: [['builtin', 'external'], ['internal'], ['parent', 'sibling', 'index'], 'unknown'],
       },
     ],
   },
